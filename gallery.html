@@ -1,0 +1,129 @@
+ <html>
+<head>
+<title>KU-VC gallery</title>
+
+<link rel="stylesheet" href="galler.css">
+<link rel="icon" type="image" href="mab/t.jpeg">
+<link rel="stylesheet" href="bars.css">
+
+
+</head>
+<body>
+
+<header>
+<h1>Kampala <img src="mab/t.jpeg" width=auto height=30> University<br> Volleyball Club</h1>
+</header>
+
+<nav class="navbar">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="players.html">Players</a></li>
+<li class="active"><a href="gallery.html">Gallery</a></li>
+<li><a href="about.html">About Us</a></li>
+</ul>
+</nav>
+
+<div class="fullimg" id="fullpic">
+<img src="mab/14.jpg" id="showme">
+  <span onclick="closepic()">X close</span>
+</div>
+
+<div class="gallery">
+
+<div class="text">
+<h3>Photo <span>Gallery</span></h3>
+</div>
+
+<div class="box">
+
+<div class="image">
+<img src="mab/16.jpg" alt="gallery photo" onclick="showpic(this.src)">
+<img src="mab/1.jpg" alt="gallery photo" onclick="showpic(this.src)">
+<img src="mab/2.jpg" alt="gallery photo" onclick="showpic(this.src)">
+<img src="mab/4.jpg" alt="gallery photo" onclick="showpic(this.src)">
+<img src="mab/5.jpg" alt="gallery photo" onclick="showpic(this.src)">
+<img src="mab/30.jpg" alt="gallery photo" onclick="showpic(this.src)">
+</div>
+
+<div class="image">
+<img src="mab/17.jpg" alt="gallery photo" onclick="showpic(this.src)">
+<img src="mab/6.jpg" alt="gallery photo" onclick="showpic(this.src)">
+<img src="mab/7.jpg" alt="gallery photo" onclick="showpic(this.src)">
+<img src="mab/8.jpg" alt="gallery photo" onclick="showpic(this.src)">
+<img src="mab/9.jpg" alt="gallery photo" onclick="showpic(this.src)">
+<img src="mab/10.jpg" alt="gallery photo" onclick="showpic(this.src)">
+<img src="mab/18.jpg" alt="gallery photo" onclick="showpic(this.src)">
+</div>
+
+<div class="image">
+<img src="mab/14.jpg" alt="gallery photo" onclick="showpic(this.src)">
+<img src="mab/3.jpg" alt="gallery photo" onclick="showpic(this.src)">
+<img src="mab/19.jpg" alt="gallery photo" onclick="showpic(this.src)">
+<img src="mab/11.jpg" alt="gallery photo" onclick="showpic(this.src)">
+<img src="mab/15.jpg" alt="gallery photo" onclick="showpic(this.src)">
+</div>
+
+</div>
+
+<div class="btn">
+<a target="_top" href="mab/e.mp4">
+<button>more</button>
+</a>
+</div>
+
+</div>
+
+<div class="ran">
+
+<div class="aside">
+<h2>This is aside</h2>
+<p>Find your perfect student accomodation with us.</p>
+<p>explore our rooms and locations</p>
+<p>Find your perfect student accomodation with us.</p>
+<p>explore our rooms and locations</p>
+
+</div>
+
+<div class="section">
+<h2>This is a section</h2>
+<p>Find your perfect student accomodation with us, 
+explore our rooms and locations</p>
+<p>Find your perfect student accomodation with us.</p>
+<p>explore our rooms and locations</p>
+<p>Find your perfect student accomodation with us,explore our rooms and locations</p>
+<p>Find your perfect student accomodation with us.</p>
+<p>explore our rooms and locations</p>
+
+</div>
+
+<div class="article">
+<h2>This is an article</h2>
+<p>Find your perfect student accomodation with us.</p>
+<p>explore our rooms and locations. Find your perfect student accomodation with us.</p>
+<p>explore our rooms and locations</p>
+
+</div>
+
+</div>
+
+<footer>
+<h2>"we are here to stay"</h2>
+</footer>
+
+<script>
+var fullpic = document.getElementById("fullpic");
+var showme = document.getElementById("showme");
+
+function showpic(pic){
+fullpic.style.display = "flex";
+showme.src = pic;
+}
+
+function closepic(){
+fullpic.style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
